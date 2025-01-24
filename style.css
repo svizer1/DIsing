@@ -1,0 +1,246 @@
+/* Основные стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('images/bg.jpg') no-repeat center center fixed;
+    background-size: cover;  /* Фоновое изображение */
+    color: #fff;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Шапка сайта */
+header {
+    text-align: center;
+    padding: 150px 0;
+    background: rgba(0, 0, 0, 0.8); /* Темный фон */
+    border-radius: 15px;
+    margin-bottom: 40px;
+}
+
+.heading {
+    font-size: 50px;
+    font-weight: bold;
+    color: #ADD8E6; /* Светлый синий */
+}
+
+.subheading {
+    font-size: 20px;
+    margin-top: 15px;
+    color: #B0C4DE; /* Светлый серо-синий */
+}
+
+/* Стили для аватарки */
+.avatar-container {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #ADD8E6; /* Светлый синий цвет вокруг аватарки */
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.avatar:hover {
+    transform: scale(1.1);
+}
+
+/* Навигация */
+.nav {
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav a {
+    color: #ADD8E6; /* Светлый синий */
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #4682B4; /* Средний синий */
+}
+
+/* Раздел "Обо мне" */
+section {
+    padding: 80px 0;
+    animation: fadeIn 2s ease-out;
+}
+
+h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #ADD8E6; /* Светлый синий */
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.about-item {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    width: 48%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.about-item h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #ADD8E6; /* Светлый синий */
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+    color: #B0C4DE; /* Светлый серо-синий */
+}
+
+/* Проекты */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.project {
+    background: rgba(0, 0, 0, 0.8); /* Темный фон */
+    padding: 20px;
+    width: 45%;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.project img:hover {
+    transform: scale(1.1);
+}
+
+.project h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #ADD8E6; /* Светлый синий */
+}
+
+.project p {
+    font-size: 16px;
+    color: #B0C4DE; /* Светлый серо-синий */
+}
+
+/* Кнопки */
+.buy-button {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.buttons-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.buy-btn {
+    background-color: #32CD32; /* Зеленый */
+    color: white;
+    font-size: 18px;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.buy-btn:hover {
+    background-color: #228B22; /* Темно-зеленый */
+}
+
+.other-btn {
+    background-color: #4682B4; /* Синий */
+    color: white;
+    font-size: 18px;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.other-btn:hover {
+    background-color: #1E3A8A; /* Темно-синий */
+}
+
+/* Контакты */
+#contact {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 50px 0;
+    text-align: center;
+    color: #fff;
+}
+
+#contact a {
+    color: #ADD8E6; /* Светлый синий */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#contact a:hover {
+    color: #4682B4; /* Средний синий */
+}
+
+/* Подвал */
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+}
+
+footer p {
+    font-size: 16px;
+    color: #B0C4DE; /* Светлый серо-синий */
+}
